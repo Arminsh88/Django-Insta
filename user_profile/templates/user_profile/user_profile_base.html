@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    {% include 'user_profile/header_include.html' %}
+    <style>
+        .info .profilepic{
+            background-image: {% block ppic %}{% endblock %};
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="logo"></div>
+    <div class="search">
+        <input type="text" placeholder="     Search">
+        <div class="zoom"></div>
+    </div>
+    <div class="icons">
+        <div class="icon explore"></div>
+        <div class="icon feed"></div>
+        <div class="icon account"></div>
+    </div>
+</div>
+<div class="info">
+    <div class="profilepic"></div>
+    <div class="pname">
+            <p class="nametag">{% block username %}{% endblock %}</p>
+        </div>
+    <div class="topf"><input class="followb" type="submit" value="Follow"></div>
+    <div class="disc">
+        <div class="bio">{% block bio %}{% endblock %}</div>
+    </div>
+</div>
+<div class="stats">
+    <div class="postsc">{% block mediacount %}{% endblock %}</div>
+    <div class="followers">{% block followercount %}{% endblock %}</div>
+    <div class="following">{% block followingcount %}{% endblock %}</div>
+</div>
+{#<div>#}
+{#    <h1> Following </h1>#}
+{#    <ul>#}
+{#        {% for u in user.Following.all %}#}
+{#        <li>#}
+{#            {{ u.whom.get_full_name }}#}
+{#        </li>#}
+{#        {% endfor %}#}
+{#        </ul>#}
+{##}
+{#</div>#}
+
+ <div class="posts">
+        {% for m in post %}
+            <img src="{% block media_id %}{% endblock %}" />
+            <p>{% block media_disc %}{% endblock %}</p>
+            <p>{% block comments %}{% endblock %}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
+
+</body>
+</html>

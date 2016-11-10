@@ -1,0 +1,163 @@
+/*@font-face {*/
+    /*f*/
+    /*o*/
+    /*n*/
+    /*t*/
+    /*s*/
+    /*font-family : 'name'*/
+    /*for adding font from local memory*/
+/*}*/
+body{
+    background-color: #fafafa;
+    font-family: Roboto;
+    font-size: large;
+}
+
+.header{
+    background-color: white;
+    width:100%;
+    height:5rem;
+    border-bottom:1px solid #dbdbdb;
+    padding-left: 3rem;
+    position: relative;
+}
+.icons{
+    position: absolute;
+    float: right;
+    width: 10rem;
+    right: 32rem;
+    top: 1.5rem;
+}
+.icons .icon{
+    height: 24px;
+    width: 24px;
+    float:left;
+    margin-left:1rem;
+}
+.explore{
+    background-image: url(dd822c.png);
+    background-position: -571px -585px;
+}
+.feed{
+    background-image: url(dd822c.png);
+    background-position: -675px -585px;
+}
+.account{
+    background-image: url(dd822c.png);
+    background-position: -623px -585px;
+}
+.logo{
+    float: left;
+    background-image: url(dd822c.png);
+    background-position: -504px -176px;
+    height:35px;
+    width:176px;
+    margin-left: 28rem;
+    margin-top: 1.5rem;
+}
+.search{
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    width: 6rem;
+    position: relative;
+    padding-top: 1.5rem;
+}
+input[type = 'text']{
+    width: 12rem;
+    border:1px solid #dbdbdb;
+    border-radius: 3px;
+}
+.search .zoom{
+    position: absolute;
+    background-image: url("dd822c.png");
+    background-position: -718px -527px;
+    width: 16px;
+    height: 16px;
+    left:0.5rem;
+    top:1.95rem;
+}
+.info{
+    height:10rem;
+    width:100%;
+
+}
+.profilepic{
+    /*background-image: url("eiffel_tower_9-wallpaper-1920x1080.jpg");*/
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    border: 1px solid #b2b2b2;
+    float: left;
+    margin-left: 35rem;
+    margin-top: 3rem;
+}
+.disc{
+    width:58%;
+    float: right;
+    position: relative;
+    margin-right: 3rem;
+}
+.followb{
+    height: 2rem;
+    border: 2px solid deepskyblue;
+    border-radius: 3px;
+    background-color: white;
+    color: #3897f0;
+    margin-left: 2rem;
+    position: absolute;
+
+}
+.topf{
+    height:2rem;
+    width: 5rem;
+    /*float: right;*/
+    position: relative;
+    padding-top: 6.25rem;
+    /*padding-right: 50rem;*/
+    /*padding-left: 76rem;*/
+
+
+}
+.pname{
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    /*position: absolute;*/
+    top: 3rem;
+    font-size: xx-large;
+}
+.nametag{
+    height: auto;
+    width: auto;
+    padding-top:4rem;
+    padding-left: 3rem;
+}
+.bio{
+    width : 40rem;
+    height: auto;
+    margin-top:  2rem;
+}
+.stats {
+    width: 58%;
+    float: right;
+    margin-top: 2rem;
+    position: relative;
+    margin-right: 11rem;
+}
+.postsc{
+    position: absolute;
+
+}
+.followers{
+    position: absolute;
+    padding-left: 8rem;
+}
+.following{
+    position: absolute;
+    padding-left: 18rem;
+}
+.posts{
+    margin-top: 11rem;
+    margin-left: 45%;
+}

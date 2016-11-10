@@ -1,0 +1,24 @@
+{% extends "user_profile/user_profile_base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    {% block title %}
+    Profile | {{ user.username }}
+    {% endblock %}
+    {% block ppic %}url("{{user.profile_picture.url}}"){% endblock %};
+</head>
+<body>
+{% block username %}{{ username }}{% endblock %}
+{% block bio %} {{ user.bio }} {% endblock %}
+{% block mediacount %}{{ user.Media.count }}{% endblock %}
+{% block followercount %}{{ user.Followers.count }}{% endblock %}
+{% block followingcount %}{{ user.Following.count }}{% endblock %}
+{% block media_id %}{{ m.media_id.url }}{% endblock %}
+{% block media_disc %}{{ m.media_disc }}{% endblock %}
+{% block comments %}{{ m.comments.count }}{% endblock %}
+
+</body>
+</html>
